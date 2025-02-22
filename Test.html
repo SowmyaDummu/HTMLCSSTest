@@ -48,24 +48,35 @@
         }
 
         /* adding styles to button */
-        button{
+        .as{
             background-color: blue;
             color: white;
             transition: 0.3s;
         }
         
-        button:hover{
+        .as:hover{
            background-color: darkblue ; 
         }
 
         /* applying styles to button class as */
-        .as{
+        .bs{
             width: 150px;
             height: 50px;
         }
-        .as:hover{
+        .bs:hover{
             scale: 1.2;
-            transform: rotate();
+            transform: scale(1.2);
+        }
+
+        /* applying styles to box1 and box2 classes */
+        .box1 {
+            position: absolute;
+            z-index: 1;
+        }
+
+        .box2 {
+            position: absolute;
+            z-index: 2;
         }
 
     </style>
@@ -106,11 +117,17 @@
     <hr>
 
     <!-- Question 6 -->
-     <button>SUBMIT BUTTON</button>
+     <button class="as">SUBMIT BUTTON</button>
 
      <hr>
-     
+
      <!-- Question 7 -->
-      <button class="as">Hover Me</button>
+      <button class="bs">Hover Me</button>
+
+      <hr>
+
+      <!-- Question 9 -->
+       <div class="box1">Box-1</div>
+       <div class="box2">Box-2</div>
 </body>
 </html>
